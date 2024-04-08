@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Document</title>
+        <style>
+            main { background-color: yellowgreen; }
+            section { background-color: darkkhaki}
+            nav {
+                background-color: gainsboro;
+                border-radius: 10px;
+                padding: 10px;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+            }
+            ul li {
+                display: inline;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="principal.html">Principal</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <!-- tag main utilizada para marcar conteudo principal da pagina -->
+        <main>
+            <h1>Blog</h1>
+            <section>
+                <h2>Viagens</h2>
+                <!-- artigo com o texto  -->
+                <article>
+                    <!-- cabeçalho do texto -->
+                    <header>
+                        <h3>Comidas diferentes</h3>
+                    </header>
+                    <!-- parágrafos -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consectetur ut illum quidem distinctio ratione qui praesentium dolore doloribus error quas, consequatur est ducimus facilis, tempore velit aliquam enim explicabo.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consectetur ut illum quidem distinctio ratione qui praesentium dolore doloribus error quas, consequatur est ducimus facilis, tempore velit aliquam enim explicabo.</p>
+                    <!-- rodapé -->
+                    <footer>
+                        Fim do texto
+                    </footer>
+                </article>
+            </section>
+            <section>
+                <h2>Música</h2>
+                <audio controls>
+                    <source src="https://bit.ly/2yNWVhL" type="audio/mp3">
+                </audio>
+                <video controls>
+                    <source src="" type="video/mp4">
+                </video>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bWrBE3nJPTA?si=c4OvJp-x05OrRA8G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+        </main>
+    </body>
+</html>
