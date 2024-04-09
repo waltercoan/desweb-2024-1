@@ -1,0 +1,20 @@
+h2, p {
+    font-size: 30px;
+    background-color: chartreuse;
+    font-family: Arial, Helvetica, sans-serif;
+    /*CONTEUDO*/
+    width: 200px;
+    height: 100px;
+    /*PADDING*/
+    padding: 50px;
+    /*BORDER*/
+    border: 10px solid black;
+    /*MARGIN*/
+    margin: 20px;
+    text-align: center;
+    /* width largura */
+    border-width: 10px 20px 30px 40px;
+    border-color: red blue green yellow;
+    border-style: dashed dotted groove double;
+    border-radius: 20px;
+}
