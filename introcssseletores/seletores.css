@@ -1,0 +1,30 @@
+/* seletor de elemento */
+ul {
+    background-color: darkgrey;
+    text-align: center;
+}
+/* seletor de elemento (li) filho de elemento (ul) */
+ul li {
+    display:inline-block;
+    background-color: darkcyan;
+    border-radius: 50px;
+    min-width: 30px;
+    min-height: 30px;
+    text-align: center;
+}
+/* seletor de classe */
+.grupodois {
+   background-color: chartreuse;
+}
+/* seletor de ID */
+#unico {
+    background-color: blueviolet;
+}
+/* seletor universal */
+* {
+    font-family: helvetica;
+}
+/* seletor de elemento com atributo */
+a[href] {
+    font-size: x-large;
+}
