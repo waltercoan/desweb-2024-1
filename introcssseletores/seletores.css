@@ -28,3 +28,28 @@ ul li {
 a[href] {
     font-size: x-large;
 }
+
+.filho {
+    background-color: fuchsia;
+}
+
+.filho li:nth-child(2){
+    background-color: chartreuse;
+}
+
+.filho li:nth-child(2n){
+    background-color: yellow;
+}
+
+.filho li:first-child{
+    border: 3px black solid;
+}
+
+.filho li:last-child{
+    border: 3px black solid;
+}
+
+button:hover {
+    background-color: fuchsia;
+    font-size: x-large;
+}
