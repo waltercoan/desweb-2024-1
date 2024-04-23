@@ -1,0 +1,22 @@
+.container > div {
+    border: dotted 1px black;
+    background-color: aquamarine;
+}
+.container {
+    height: 100px;
+    display: flex;
+    background-color: cadetblue;
+    /*alinha a esquerda*/
+    flex-direction: row;
+    /*alinha a direita
+    flex-direction: row-reverse;*/
+    /*cria uma única coluna
+    flex-direction: column;*/
+    /*cria uma única coluna inverte
+    flex-direction: column-reverse;*/
+    /*alinha na vertical*/
+    align-items: center;
+    /*alinha na horizontal*/
+    justify-content: center;
+    gap: 20px;
+}

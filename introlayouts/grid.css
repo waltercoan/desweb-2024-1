@@ -1,0 +1,26 @@
+.container > div {
+    border: dotted 1px black;
+    background-color: aquamarine;
+}
+.container {
+    height: 100px;
+    background-color: cadetblue;
+    display: grid;
+    /*grid-template-columns: 1fr 2fr 4fr 2fr;*/
+    grid-template: 
+        'item1 item1'
+        'item2 item3' 
+        'item4 item4';
+}
+.item1 {
+    grid-area: item1;
+}
+.item2 {
+    grid-area: item2;
+}
+.item3 {
+    grid-area: item3;
+}
+.item4 {
+    grid-area: item4;
+}
