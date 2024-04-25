@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+.container > * {
+    background-color: grey;
+    height: 100px;
+}
+.centraliza-texto{
+    text-align: center;
+}
+.fonte-bonita{
+    font-family: Verdana;
+}
