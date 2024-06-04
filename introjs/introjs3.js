@@ -62,9 +62,30 @@ while(cont < 10){
     cont = cont + 1
     console.log(cont)
 }
-*/
+
 let cont2 = 10
 while(cont2 > 0){
     console.log(cont2)
     cont2 = cont2 - 1
+}
+*/
+
+
+for(let i=0;i < 10;i++){
+    console.log(i)
+}
+
+let qualovalor=0
+//console.log(qualovalor++)
+console.log(qualovalor)
+qualovalor = qualovalor + 1
+//console.log(++qualovalor)
+qualovalor = qualovalor + 1
+console.log(qualovalor)
+
+//foreach
+let lista = ['banana', 'laranja', 'maça']
+for(let umafruta in lista){
+    console.log(umafruta + ' ' + lista[umafruta])
+    console.log(`${umafruta}  ${lista[umafruta]}`)
 }
