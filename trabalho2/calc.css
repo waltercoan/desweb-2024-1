@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    background-color: gray;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.teclado {
+    width: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+button {
+    font-size: large;
+}
+input {
+    font-size: large;
+}
