@@ -1,5 +1,7 @@
 <h2>Clientes</h2>
 
+<a class="btn btn-primary" href="./clientes/novo">Novo</a>
+
 <table class="table">
     <thead>
         <th>Nome</th>
@@ -8,11 +10,13 @@
         <th>Data Nascimento</th>
     </thead>
     <tbody>
+        {{#each listaclientes}}
         <tr>
-            <td>Zezinho</td>
-            <td>Rua lalala 100</td>
-            <td>5555-1234</td>
-            <td>20/06/2000</td>
+            <td>{{this.nome}}</td>
+            <td>{{this.endereco}}</td>
+            <td>{{this.telefone}}</td>
+            <td>{{this.datanascimento}}</td>
         </tr>
+        {{/each}}
     </tbody>
 </table>

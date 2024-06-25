@@ -24,6 +24,24 @@ app.use('/js', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/
 app.use('/js', express.static(path.join(__dirname, 'node_modules/jquery/dist')))
 
 
+const dadosfalsos = [
+    {
+        id: 1,
+        nome: "Zezinho da Silva Sauro",
+        endereco: "Rua lalalala 100",
+        telefone: "5555-4322",
+        datanascimento: "24/06/2024"
+    },
+    {
+        id: 2,
+        nome: "Mariazinha da Silva",
+        endereco: "Rua lululu 200",
+        telefone: "5555-34234243",
+        datanascimento: "23/06/2024"
+    }
+]
+
+
 //let contador = 0
 
 app.get('/', (req,res) =>{
@@ -33,9 +51,13 @@ app.get('/', (req,res) =>{
 })
 
 app.get('/clientes', function(request, response){
-    response.render('clientes/index')
+    response.render('clientes/index', {listaclientes: dadosfalsos})
 })
 
+
+app.get('/clientes/novo', function(req,res){
+    res.render('clientes/formcliente')
+})
 
 
 
