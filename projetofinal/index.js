@@ -65,19 +65,29 @@ app.get('/clientes/novo', function(req,res){
 })
 
 app.post('/clientes/save', function(req,res){
-    //console.log(req.body)
-    let maiorid = Math.max(...dadosfalsos.map(c => c.id))
-    if (maiorid == -Infinity) maiorid = 0
-    maiorid = maiorid + 1
+    //PROCURAR PELO CLIENTE
+    let clienteantigo = dadosfalsos.find(c => c.id == req.body.id)
+    //SE NAO ENCONTRAR ENTAO INCLUI UM NOVO
+    if(clienteantigo == undefined){
+        let maiorid = Math.max(...dadosfalsos.map(c => c.id))
+        if (maiorid == -Infinity) maiorid = 0
+        maiorid = maiorid + 1
 
-    let novocliente ={
-        id: maiorid,
-        nome: req.body.nome,
-        endereco: req.body.endereco,
-        telefone: req.body.telefone,
-        datanascimento: req.body.datanascimento
+        let novocliente ={
+            id: maiorid,
+            nome: req.body.nome,
+            endereco: req.body.endereco,
+            telefone: req.body.telefone,
+            datanascimento: req.body.datanascimento
+        }
+        dadosfalsos.push(novocliente)
+    }else{
+        //codigo da alteração do cliente
+        clienteantigo.nome = req.body.nome
+        clienteantigo.endereco = req.body.endereco
+        clienteantigo.telefone = req.body.telefone
+        clienteantigo.datanascimento = req.body.datanascimento
     }
-    dadosfalsos.push(novocliente)
     res.redirect('/clientes')
 })
 
