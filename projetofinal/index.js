@@ -91,6 +91,19 @@ app.post('/clientes/save', function(req,res){
     res.redirect('/clientes')
 })
 
+app.get('/clientes/delete/:id', function(req,res){
+    //procura o cliente pelo codigo
+    let umcliente = dadosfalsos.find(c => c.id == req.params['id'])
+    let poscliente = dadosfalsos.indexOf(umcliente)
+    if(poscliente > -1){
+        dadosfalsos.splice(poscliente,1)
+    }
+    res.redirect('/clientes')
+})
+
+
+
+
 app.get('/clientes/alterar/:id',function(req,res){
     let id = req.params['id']
     let cliente = dadosfalsos.find(c => c.id == id)
